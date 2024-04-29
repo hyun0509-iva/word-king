@@ -1,0 +1,40 @@
+@import url("./font.css");
+
+* {
+  font-family: 'Pretendard';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  color: #4E515B;
+  -ms-overflow-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+/* common layout */
+.wrap {
+  width: 100%;
+  max-width: 680px;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 0 0 0px rgb(0 0 0 / 3%), 0 3px 6px rgb(0 0 0 / 17%);
+}

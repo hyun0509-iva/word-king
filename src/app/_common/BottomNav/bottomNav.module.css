@@ -1,0 +1,8 @@
+.BottomNavWrap {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  width: 680px;
+  height: 65px;
+  border: 1px solid rgb(213, 213, 213);  
+}
