@@ -1,0 +1,25 @@
+.AddBtnWrap {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+
+.AddBtnWrap button {
+  width: 50px;
+  height: 50px;
+  transition: 0.25s all ease-in;
+  border: none;
+  border-radius: 50%;
+  background: rgb(183, 182, 182);
+  cursor: pointer;
+}
+
+.AddBtnWrap button:hover span {
+  color: #1092f5;
+}
+
+.AddBtnWrap button span {
+  width: 100%;
+  height: 100%;
+  color: #246aa0;
+}

@@ -1,8 +1,65 @@
 .BottomNavWrap {
-  position: fixed;
+  position: absolute;
   z-index: 10;
   bottom: 0;
-  width: 680px;
+  width: 100%;
   height: 65px;
-  border: 1px solid rgb(213, 213, 213);  
+  border-top: 1px solid rgb(213, 213, 213);
+  display: flex;
+}
+
+.Menu {
+  display: flex;
+  min-width: 100%;
+  width: 500px;
+
+  .MenuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .MenuItem .MenuIcon {
+    font-size: 24px;
+  }
+
+  .MenuItem .ItemTxt {
+    position: relative;
+    top: -10px;
+    left: 0px;
+    font-size: 13px;
+  }
+
+  .MenuItem a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .MenuIcon {
+      font-size: 24px;
+    }
+
+    .ItemTxt {
+      position: relative;
+      top: -10px;
+      left: 0px;
+      font-size: 13px;
+    }
+  }
+
+  .MenuItem a:hover {
+    background-color: rgb(230, 230, 230);
+
+    .MenuIcon {
+      color: #ffffff;
+    }
+  }
+
 }

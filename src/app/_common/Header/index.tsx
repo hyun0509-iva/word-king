@@ -1,6 +1,7 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { AiOutlineLogin } from "@react-icons/all-files/ai/AiOutlineLogin";
 import S from "./header.module.css";
 
 const Header = () => {
@@ -12,8 +13,17 @@ const Header = () => {
         </span>
       </Link>
       <ul className={S.UserMenu}>
-        <li><Link href="/login">로그인</Link></li> {/* 로그인은 모달창으로 만듦 */}
-        <li><Link href="/my">마이페이지</Link></li>
+        <li>
+          <Link href="library">서재</Link>
+        </li>
+        {/* 로그인은 모달창으로 만듦 */}
+        <li>
+          <Link href="/login" title="로그인">
+            <span className={S.MenuIcon}>
+              <AiOutlineLogin size={24} />
+            </span>
+          </Link>
+        </li>
       </ul>
     </header>
   );

@@ -1,7 +1,6 @@
-import Home from "./(domain)/Home";
 
 const Page = () => {
-  return <Home />;
+  return <div>홈</div>;
 };
 
 export default Page;

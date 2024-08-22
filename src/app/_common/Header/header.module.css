@@ -2,9 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 0 0px rgb(0 0 0 / 3%), 0 3px 6px rgb(0 0 0 / 17%);
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+  height: 68px;
+  box-shadow: 0 0 0 0px rgb(0 0 0 / 3%), 0 1px 2px rgb(0 0 0 / 17%);
   padding: 20px 30px;
-  height: 80px;
+  z-index: 10;
+  background-color: #fff;
 }
 
 .LogoInner {

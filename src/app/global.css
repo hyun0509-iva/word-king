@@ -29,12 +29,43 @@ li {
   list-style: none;
 }
 
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  margin: 0 0 6px;
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #868e96;
+  border-radius: 25px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+
+  &:hover {
+    background-color: #495057;
+  }
+}
+
 /* common layout */
 .wrap {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 680px;
+  max-width: 500px;
+  min-width: 375px;
   min-height: 100vh;
   overflow: hidden;
   margin: 0 auto;
   box-shadow: 0 0 0 0px rgb(0 0 0 / 3%), 0 3px 6px rgb(0 0 0 / 17%);
+}
+
+.contents {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-top: 68px;
+  padding: 5px;
 }

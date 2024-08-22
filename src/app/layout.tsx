@@ -8,7 +8,7 @@ import BottomNav from "./_common/BottomNav";
 import "./global.css";
 
 export const metadata: Metadata = {
-  title: "word king",
+  title: "워드킹",
   description: "영단어를 암기하고 같이 게임하며 재미있게 익혀보세요.",
   icons: {
     icon: "/favicon.svg",
@@ -32,7 +32,7 @@ export default async function RootLayout({
           <Hydrate state={dehydratedState}>
             <div className="wrap">
               <Header />
-              {children}
+              <div className="contents">{children}</div>
               <BottomNav />
             </div>
           </Hydrate>
